@@ -5,7 +5,7 @@ CHONO is a minimalist, industrial React Native (Expo) application foundation for
 ## Stack
 
 - Expo + React Native + TypeScript
-- Clerk (`@clerk/clerk-expo`) for auth with OAuth providers
+- Local in-app auth context (no external auth provider)
 - React Navigation (Stack + Drawer)
 - NativeWind (Tailwind utility classes)
 - Icons: Lucide + MaterialCommunityIcons
@@ -24,15 +24,7 @@ CHONO is a minimalist, industrial React Native (Expo) application foundation for
    cp .env.example .env
    ```
 
-3. Add your Clerk publishable key in `.env`:
-
-   ```bash
-   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_live_or_test_key_here
-   ```
-
-4. In Clerk Dashboard, configure Google and Facebook OAuth for the application.
-
-5. Start Expo:
+3. Start Expo:
 
    ```bash
    npm run start
@@ -40,15 +32,16 @@ CHONO is a minimalist, industrial React Native (Expo) application foundation for
 
 ## Implemented Foundation
 
-- Branded login screen with Google/Facebook OAuth actions
-- Clerk provider and secure token caching via `expo-secure-store`
-- Auth gate routing between Login and Drawer app
+- Branded login screen with local demo login
+- Auth gate routing between Login and tab app
 - Hero Dashboard with 4 Mongolian action cards
 - Profile scaffold with editable fields and Save/Edit toggle
 - Light/dark adaptive theme tokens
+- News and Projects screens aligned to CHONO references
+- Branded splash animation sequence
 
 ## Notes
 
-- New Clerk OAuth users are automatically provisioned on first successful sign-in.
-- Replace the temporary wolf logo image URI with your local CHONO brand asset in `assets` when available.
+- Local auth is currently in-memory for demo UI flow (replace with API auth when backend is ready).
 # ChonoPhone
+# buildingPhone
