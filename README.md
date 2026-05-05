@@ -45,3 +45,4 @@ CHONO is a minimalist, industrial React Native (Expo) application foundation for
 - Local auth is currently in-memory for demo UI flow (replace with API auth when backend is ready).
 # ChonoPhone
 # buildingPhone
+# chonoPhones
